@@ -13,8 +13,8 @@ const int pwmFreq = 5000;
 const int pwmResolution = 8;
 const int pwmLedChannelTFT = 5;
 
-const char* ssid = "IGK202";
-const char* password = "18072019";
+const char* ssid = "xxxxxxxx";
+const char* password = "xxxxxxxxx";
 const char* ntpServer = "pool.ntp.org";
 unsigned long epochTime; 
 
