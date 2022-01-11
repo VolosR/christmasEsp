@@ -15,8 +15,8 @@ const int pwmFreq = 5000;
 const int pwmResolution = 8;
 const int pwmLedChannelTFT = 5;
 
-const char* ssid = "casa3S";
-const char* password = "w!R3l3s5";
+const char* ssid = "ssid***";
+const char* password = "password***";
 const char* ntpServer = "pool.ntp.org";
 unsigned long epochTime;
 
