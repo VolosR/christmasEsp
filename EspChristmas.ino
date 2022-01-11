@@ -1,9 +1,11 @@
 #include <TFT_eSPI.h> // Graphics and font library for ST7735 driver chip
 #include <SPI.h>
+//#include "kevin.h"
 
 #include <WiFi.h>
 #include <Time.h>
 #include "fonts.h"
+//#include "kevin3.h"
 #include "donald.h"
 #include <TimeLib.h>
 
@@ -13,8 +15,8 @@ const int pwmFreq = 5000;
 const int pwmResolution = 8;
 const int pwmLedChannelTFT = 5;
 
-const char* ssid = "ssid***";
-const char* password = "password***";
+const char* ssid = "casa3S";
+const char* password = "w!R3l3s5";
 const char* ntpServer = "pool.ntp.org";
 unsigned long epochTime;
 
@@ -33,7 +35,7 @@ unsigned long unixTime(int year, int month, int day, int hour, int minute, int s
 
 unsigned long lastDayOfMonth(unsigned long epochTime)
 {
-  int m = month(epochTime) - 1;
+  int m = month(epochTime);
   int y = year(epochTime);
   return unixTime(y, m, 0, 0, 0, 0);
 }
